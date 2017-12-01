@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/lnx_mikel/.config/i3'
+let g:netrw_dirhist_2='/run/media/mikel/Datos/Proyectos/AUR/github-desktop/pkg/github-desktop'
+let g:netrw_dirhist_3='/home/mikel/ash_modules'
+let g:netrw_dirhist_4='/run/media/mikel/Datos/Proyectos/Páginas/Startpage/css'
