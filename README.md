@@ -34,6 +34,7 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 |:---------:|:---------------------------:|
 | archlinux | sudo stow archlinux -t /etc |
 |    git    |           stow git          |
+|    tmux   |           stow tmux         |
 |    vim    |           stow vim          |
 |    zsh    |           stow zsh          |
 
