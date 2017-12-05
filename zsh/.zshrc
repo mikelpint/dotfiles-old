@@ -6,7 +6,7 @@ export EDITOR=$VISUAL
 export PATH=$PATH:~/.gem/ruby/2.4.0/bin
 
 # Set language to Spanish.
-export LANG=es_ES.UTF_8
+export LANG=es_ES.UTF-8
 
 # Tmux plugin's configuration
 export ZSH_TMUX_AUTOSTART=true
