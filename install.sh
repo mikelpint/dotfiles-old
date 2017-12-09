@@ -1,14 +1,23 @@
 #!/bin/sh
 
+if [ -f /usr/bin/dialog ]; then
+    :
+else
+    echo "Please install dialog before continuing"
+    exit 1
+fi
+
 cmd=(dialog --backtitle "mikelpint's dotfiles: Installation script" --menu "Select an option:" 15 40 6)
 
 options=(
     1 "Arch Linux"
     2 "Git"
     3 "Tmux"
-    4 "Vim" 
+    4 "Vim"
     5 "Zsh"
-    6 "Exit"
+    6 "BSPWM"
+    7 "Polybar"
+    8 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -44,12 +53,28 @@ do
             stow vim ;;
         5)
             clear
-            if [ -f ~/.zshrc]; then
+            if [ -f ~/.zshrc ]; then
                 mv ~/.zshrc ~/.zshrc.before
                 mv ~/.keybindings.zsh ~/.keybindings.zsh.before
                 mv ~/.aliases.zsh ~/.aliases.zsh.before
                 mv ~/.functions.zsh ~/.functions.zsh.before
             fi
             stow zsh ;;
+        6)
+            clear
+            if [ -f ~/.config/bspwm ]; then
+                mv ~/.config/bspwm ~/.config/bspwm-before
+                mv ~/.sxhkd ~/.config/sxhkd-before
+            fi
+            stow bspwm ;;
+        7)
+            clear
+            if [ -f ~/.config/polybar/config ]; then
+                mv ~/.config/polybar ~/.config/polybar-before
+            fi
+            stow polybar ;;
+        8)
+            clear
+            exit 0 ;;
     esac
 done
