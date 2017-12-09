@@ -17,7 +17,8 @@ options=(
     5 "Zsh"
     6 "BSPWM"
     7 "Polybar"
-    8 "Exit"
+    8 "X11"
+    9 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -74,6 +75,15 @@ do
             fi
             stow polybar ;;
         8)
+            clear
+            if [ -f ~/.Xresources ]; then
+                mv ~/.Xresources ~/.Xresources.before
+            fi
+            if [ -f ~/.xinitrc ]; then
+                mv ~/.xinitrc ~/.xinitrc.before
+            fi
+            stow x11 ;;
+        9)
             clear
             exit 0 ;;
     esac
