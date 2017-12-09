@@ -7,7 +7,7 @@ else
     exit 1
 fi
 
-cmd=(dialog --backtitle "mikelpint's dotfiles: Installation script" --menu "Select an option:" 15 40 6)
+cmd=(dialog --backtitle "mikelpint's dotfiles: Installation script" --menu "Select an option:" 20 40 10)
 
 options=(
     1 "Arch Linux"
