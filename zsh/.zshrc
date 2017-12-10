@@ -25,7 +25,7 @@ plugins=(
     sprunge
     archlinux
     tmux
-    thefuck
+    sudo
 )
 
 # Oh My Zsh

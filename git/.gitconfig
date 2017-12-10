@@ -26,4 +26,6 @@
     added = yellow
     changed = green
     untracked = cyan
-
+[user]
+	email = mikelaitornube2010@gmail.com
+	name = Mikel Pintado
