@@ -18,7 +18,8 @@ options=(
     6 "BSPWM"
     7 "Polybar"
     8 "X11"
-    9 "Exit"
+    9 "sxhkd"
+    10 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -84,6 +85,12 @@ do
             fi
             stow x11 ;;
         9)
+            clear
+            if [ -f ~/.config/sxhkd/sxhkdrc ]; then
+                mv ~/.config/sxhkd ~/.config/sxhkd-before
+            fi
+            stow sxhkd ;;
+        10)
             clear
             exit 0 ;;
     esac
