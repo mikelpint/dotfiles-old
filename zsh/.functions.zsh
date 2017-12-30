@@ -21,7 +21,7 @@ bindkey "^X^L" insert-last-command-output
 
 # Show metadata of current song
 function songmetadata {
-    echo "Artist: $(playerctl metadata xesam:Artist)"
+    echo "Artist: $(playerctl metadata xesam:artist)"
     echo "Album: $(playerctl metadata xesam:album)"
     echo "Song: $(playerctl metadata xesam:title)"
 }
