@@ -14,8 +14,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Firefox desktop='^2'
-bspc rule -a mplayer vlc desktop='^3'
-bspc rule -a "*:cmus" desktop='^3'
+bspc rule -a vlc desktop='^3'
 
 feh --bg-fill $BACKGROUND
 
