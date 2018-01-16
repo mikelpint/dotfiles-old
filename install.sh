@@ -13,7 +13,7 @@ options=(
     1 "Arch Linux"
     2 "Git"
     3 "Tmux"
-    4 "Vim"
+    4 "Neovim"
     5 "Zsh"
     6 "BSPWM"
     7 "Polybar"
@@ -47,12 +47,10 @@ do
             stow tmux ;;
         4)
             clear
-            if [ -f ~/.vimrc ]; then
-                mv ~/.vimrc ~/.vimrc.before
-                mv ~/.vim ~/.vim-before
-                mv ~/.vim_runtime ~/.vim_runtime-before
+            if [ -f ~/.config/nvim/init.vim ]; then
+                mv ~/.config/nvim ~/.config/nvim-before
             fi
-            stow vim ;;
+            stow nvim ;;
         5)
             clear
             if [ -f ~/.zshrc ]; then
