@@ -22,6 +22,11 @@ if [ -f /usr/bin/tldr ]; then
     alias man='tldr'
 fi
 
+# Replace Vim with NVim
+if [ -f /usr/bin/nvim ]; then
+    alias vim = nvim
+fi
+
 # Editing dotfiles
 alias zshconf="$EDITOR ~/.zshrc"
 alias visudo="$EDITOR /etc/sudoers"
@@ -35,6 +40,11 @@ alias sm="songmetadata"
 
 # Override rm -i alias which makes rm prompt for every action
 alias rm='nocorrect rm'
+
+# True commands
+alias tman = /usr/bin/man # Man
+alias tvim = /usr/bin/vim # Vim
+alias tcat = /usr/bin/cat # Cat
 
 # Git Aliases
 alias gs='git status'
