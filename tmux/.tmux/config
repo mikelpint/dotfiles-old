@@ -58,4 +58,4 @@ if -b '! command -v xsel > /dev/null 2>&1 && command -v xclip > /dev/null 2>&1' 
   ########
 
 # Set theme to Basic.
-source-file "$~/.tmux/themes/basic.tmuxtheme
+source ~/.tmux/themes/basic.tmuxtheme
