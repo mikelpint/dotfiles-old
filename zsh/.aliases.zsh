@@ -24,7 +24,7 @@ fi
 
 # Replace Vim with NVim
 if [ -f /usr/bin/nvim ]; then
-    alias vim = nvim
+    alias vim='nvim'
 fi
 
 # Editing dotfiles
@@ -42,9 +42,9 @@ alias sm="songmetadata"
 alias rm='nocorrect rm'
 
 # True commands
-alias tman = /usr/bin/man # Man
-alias tvim = /usr/bin/vim # Vim
-alias tcat = /usr/bin/cat # Cat
+alias tman='/usr/bin/man' # Man
+alias tvim='/usr/bin/vim' # Vim
+alias tcat='/usr/bin/cat' # Cat
 
 # Git Aliases
 alias gs='git status'
