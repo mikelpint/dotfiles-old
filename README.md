@@ -1,22 +1,20 @@
 ```
-      ██            ██     ████ ██  ██
-     ░██           ░██    ░██░ ░░  ░██
-     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
-  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░ 
- ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████ 
-░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
-░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████ 
- ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
+d8888b.  .d88b.  d888888b d88888b d888888b db      d88888b .d8888.
+88  `8D .8P  Y8. `~~88~~' 88'       `88'   88      88'     88'  YP
+88   88 88    88    88    88ooo      88    88      88ooooo `8bo.  
+88   88 88    88    88    88~~~      88    88      88~~~~~   `Y8b.
+88  .8D `8b  d8'    88    88        .88.   88booo. 88.     db   8D
+Y8888D'  `Y88P'     YP    YP      Y888888P Y88888P Y88888P `8888Y'
 ```
 
 # About
 
 This repository is a public backup of my dotfiles.
-They are a mix of other dotfiles.
+They are a mix of other dotfiles and some ideas of my own.
 
 # Installation
 
-This dotfiles can be managed using *GNU Stow* or by using the script located at the root of this repository.
+This dotfiles can be managed using *GNU Stow* or by using the script located at the root diretory of this repository.
 
 ## Using *GNU Stow*
 
@@ -30,16 +28,16 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 
 ### List of *GNU Stow* packages
 
-|    Name   |            Method           |
-|:---------:|:---------------------------:|
-| archlinux | sudo stow archlinux -t /etc |
-|    git    |           stow git          |
-|    tmux   |           stow tmux         |
-|    vim    |           stow vim          |
-|    zsh    |           stow zsh          |
+|     Name     |            Method           |
+|:------------:|:---------------------------:|
+|  Arch Linux  | sudo stow archlinux -t /etc |
+|     Git      |         stow git            |
+|     Tmux     |         stow tmux           |
+|    Neovim    |         stow nvim           |
+|     Zsh      |         stow zsh            |
 
 # Special thanks
 
-[/u/dotherbarbwa](https://www.reddit.com/user/dothebarbwa): Tmux appearance.  
+[@jimeh](https:/github.com/jimeh): Tmux theme.  
 [@amix](https://github.com/amix): Vim configuration.  
 [@skwp](https://github.com/): Most of ZSH aliases, keybindings and functions.  
