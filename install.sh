@@ -41,7 +41,7 @@ do
             stow git ;;
         3)
             clear
-            if [ -f ~/.tmux.conf]; then
+            if [ -f ~/.tmux.conf ]; then
                 mv ~/.tmux.conf ~/.tmux.conf.before
                 mv ~/.tmux ~/.tmux-before
             fi
