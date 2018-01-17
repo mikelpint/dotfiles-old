@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree' " Tree explorer
 Plug 'scrooloose/syntastic' " Syntax checking
 Plug 'tpope/vim-surround' " Parentizing and quoting
 Plug 'bling/vim-airline' " Tabline
+Plug 'vim-airline/vim-airline-themes' " Tabline (themes)
 Plug 'valloric/youcompleteme' "Code completion
 Plug 'chriskempson/base16-vim' " Color schemes
 Plug 'airblade/vim-gitgutter' " Git diff
@@ -61,3 +62,6 @@ let NERDTreeWinSize=20
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/.vimwiki'}]
+
+" vim-airline
+let g:airline_theme='base16-eighties'

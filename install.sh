@@ -51,7 +51,11 @@ do
             if [ -f ~/.config/nvim/init.vim ]; then
                 mv ~/.config/nvim ~/.config/nvim-before
             fi
-            stow nvim ;;
+            stow nvim
+            {
+                nvim +PlugInstall +qall
+                python ~/.config/nvim/plugged/youcompleteme/install.py --clang-completer
+            } & >/dev/null ;;
         5)
             clear
             if [ -f ~/.zshrc ]; then
@@ -94,3 +98,5 @@ do
             exit 0 ;;
     esac
 done
+
+clear
