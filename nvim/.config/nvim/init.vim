@@ -20,7 +20,6 @@ Plug 'benmills/vimux' "Interaction with Tmux
 Plug 'honza/vim-snippets' " Snippets
 Plug 'editorconfig/editorconfig-vim' " Configuration
 Plug 'junegunn/vim-easy-align' " Alignment
-Plug 'nathanaelkane/vim-indent-guides' " Visually display indent levels
 
 call plug#end()
 
@@ -40,7 +39,7 @@ set encoding=utf-8
 if &t_Co > 2 || has("gui_running")
     syntax on
     set colorcolumn=80
-    silent! color base16-gruvbox-dark-soft
+    silent! color base16-spacemacs
     set background=dark
 endif
 
@@ -64,4 +63,4 @@ let NERDTreeWinSize=20
 let g:vimwiki_list = [{'path': '~/.vimwiki'}]
 
 " vim-airline
-let g:airline_theme='base16_eighties'
+let g:airline_theme='base16_spacemacs'
