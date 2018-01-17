@@ -28,13 +28,17 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 
 ### List of *GNU Stow* packages
 
-|     Name     |            Method           |
-|:------------:|:---------------------------:|
-|  Arch Linux  | sudo stow archlinux -t /etc |
-|     Git      |         stow git            |
-|     Tmux     |         stow tmux           |
-|    Neovim    |         stow nvim           |
-|     Zsh      |         stow zsh            |
+|    Name    |            Method           |
+|:----------:|:---------------------------:|
+| Arch Linux | sudo stow archlinux -t /etc |
+|    BSPWM   |          stow bspwm         |
+|     Git    |           stow git          |
+|   Neovim   |          stow nvim          |
+|   Polybar  |         stow polybar        |
+|    sxhkd   |          stow sxhkd         |
+|    Tmux    |          stow tmux          |
+|     X11    |           stow x11          |
+|     Zsh    |           stow zsh          |
 
 # Special thanks
 
