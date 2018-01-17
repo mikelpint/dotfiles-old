@@ -52,10 +52,10 @@ do
                 mv ~/.config/nvim ~/.config/nvim-before
             fi
             stow nvim
+            nvim +PlugInstall +qall > /dev/null
             if [ -f ~/.config/nvim/plugged/youcompleteme/.installed ]; then
                 :
             else
-                nvim +PlugInstall +qall > /dev/null
                 python ~/.config/nvim/plugged/youcompleteme/install.py --clang-completer  > /dev/null
                 touch ~/.config/nvim/plugged/youcompleteme/.installed
             fi
