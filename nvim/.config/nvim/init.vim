@@ -21,7 +21,8 @@ Plug 'honza/vim-snippets' " Snippets
 Plug 'editorconfig/editorconfig-vim' " Configuration
 Plug 'junegunn/vim-easy-align' " Alignment
 Plug 'nathanaelkane/vim-indent-guides' " Visually display indent levels
-Plug 'tpope/vim-endwise' " Auto-closing
+Plug 'townk/vim-autoclose' " Auto-closing
+Plug 'amirh/html-autoclosetag' " Auto-close HTML tags
 
 
 call plug#end()
