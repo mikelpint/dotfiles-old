@@ -52,7 +52,7 @@ do
                 mv ~/.config/nvim ~/.config/nvim-before
             fi
             stow nvim
-            if [ -f ~/.config/nvim/plugged/youcompleteme/installed ]; then
+            if [ -f ~/.config/nvim/plugged/youcompleteme/.installed ]; then
                 :
             else
                 nvim +PlugInstall +qall > /dev/null
