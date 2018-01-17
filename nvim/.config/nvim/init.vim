@@ -64,4 +64,4 @@ let NERDTreeWinSize=20
 let g:vimwiki_list = [{'path': '~/.vimwiki'}]
 
 " vim-airline
-let g:airline_theme='base16-eighties'
+let g:airline_theme='base16_eighties'
