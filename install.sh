@@ -52,10 +52,8 @@ do
                 mv ~/.config/nvim ~/.config/nvim-before
             fi
             stow nvim
-            {
-                nvim +PlugInstall +qall
-                python ~/.config/nvim/plugged/youcompleteme/install.py --clang-completer
-            } & >/dev/null ;;
+            nvim +PlugInstall +qall > /dev/null
+            python ~/.config/nvim/plugged/youcompleteme/install.py --clang-completer  > /dev/null ;;
         5)
             clear
             if [ -f ~/.zshrc ]; then
