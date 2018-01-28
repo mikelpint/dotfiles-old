@@ -43,5 +43,7 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 # Special thanks
 
 [@jimeh](https:/github.com/jimeh): Tmux theme.
+<br>
 [@danirod](https://github.com/danirod): Some Vim settings.
+<br>
 [@skwp](https://github.com/): Most of ZSH aliases, keybindings and functions.
