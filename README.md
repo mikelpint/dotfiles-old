@@ -39,6 +39,7 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 |    Tmux    |          stow tmux          |
 |     X11    |           stow x11          |
 |     Zsh    |           stow zsh          |
+|     Zsh    |         stow compton        |
 
 # Special thanks
 

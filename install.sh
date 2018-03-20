@@ -19,7 +19,8 @@ options=(
     7 "Polybar"
     8 "X11"
     9 "sxhkd"
-    10 "Exit"
+    10 "compton"
+    11 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -98,6 +99,10 @@ do
             fi
             stow sxhkd ;;
         10)
+            clear
+            if [ -f ~/.config/compton.conf ]; then
+                mv ~/.config/compton.conf ~/.config/compton.conf
+        11)
             clear
             exit 0 ;;
     esac
