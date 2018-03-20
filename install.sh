@@ -19,7 +19,7 @@ options=(
     7 "Polybar"
     8 "X11"
     9 "sxhkd"
-    10 "compton"
+    10 "Compton"
     11 "Exit"
 )
 
