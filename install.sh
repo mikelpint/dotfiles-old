@@ -101,7 +101,9 @@ do
         10)
             clear
             if [ -f ~/.config/compton.conf ]; then
+            fi
                 mv ~/.config/compton.conf ~/.config/compton.conf
+            stow compton ;;
         11)
             clear
             exit 0 ;;
