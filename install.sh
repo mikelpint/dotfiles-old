@@ -110,7 +110,7 @@ do
             if [ -d ~/.config/xfce4 ]; then
                 mv ~/.config/xfce4 ~/.config/xfce4-before
             fi
-            stow xfce4 ;;
+            stow xfce ;;
         12)
             clear
             exit 0 ;;
