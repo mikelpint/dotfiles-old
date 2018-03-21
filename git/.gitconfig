@@ -1,3 +1,6 @@
+[core]
+    editor = nvim
+
 [push]
     default = current
 
@@ -27,5 +30,10 @@
     changed = green
     untracked = cyan
 [user]
-    email = <your email>
-    name = <your name>
+	email = mikelaitornube2010@gmail.com
+	name = Mikel Pintado
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
