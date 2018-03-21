@@ -20,7 +20,8 @@ options=(
     8 "X11"
     9 "sxhkd"
     10 "Compton"
-    11 "Exit"
+    11 "Xfce"
+    12 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -94,7 +95,7 @@ do
             stow x11 ;;
         9)
             clear
-            if [ -f ~/.config/sxhkd/sxhkdrc ]; then
+            if [ -d ~/.config/sxhkd/ ]; then
                 mv ~/.config/sxhkd ~/.config/sxhkd-before
             fi
             stow sxhkd ;;
@@ -102,9 +103,15 @@ do
             clear
             if [ -f ~/.config/compton.conf ]; then
                 mv ~/.config/compton.conf ~/.config/compton.conf
-                fi
+            fi
             stow compton ;;
         11)
+            clear
+            if [ -d ~/.config/xfce4 ]; then
+                mv ~/.config/xfce4 ~/.config/xfce4-before
+            fi
+            stow xfce4 ;;
+        12)
             clear
             exit 0 ;;
     esac
