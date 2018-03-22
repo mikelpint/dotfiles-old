@@ -2,6 +2,8 @@
 
 if [ -f /usr/bin/dialog ]; then
     :
+elif [ -f /usr/local/bin/dialog ]; then
+    :
 else
     echo "Please install dialog before continuing"
     exit 1
