@@ -31,15 +31,16 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 |    Name    |            Method           |
 |:----------:|:---------------------------:|
 | Arch Linux | sudo stow archlinux -t /etc |
-|  Compton   |         stow compton        |
 |    BSPWM   |          stow bspwm         |
+|   Compton  |         stow compton        |
+|    Conky   |          stow conky         |
 |     Git    |           stow git          |
 |   Neovim   |          stow nvim          |
 |   Polybar  |         stow polybar        |
 |    sxhkd   |          stow sxhkd         |
 |    Tmux    |          stow tmux          |
-|     X11    |           stow x11          |
 |    Xfce    |          stow xfce          |
+|     X11    |           stow x11          |
 |     Zsh    |         stow compton        |
 
 # Special thanks

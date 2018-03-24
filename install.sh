@@ -23,7 +23,8 @@ options=(
     9 "sxhkd"
     10 "Compton"
     11 "Xfce"
-    12 "Exit"
+    12 "Conky"
+    13 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -114,6 +115,11 @@ do
             fi
             stow xfce ;;
         12)
+            clear if [-f ~/.conkyrc ]; then
+                mv ~/.conkyrc ~/.conkyrc.before
+            fi
+            stow conky ;;
+        13)
             clear
             exit 0 ;;
     esac
