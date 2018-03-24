@@ -115,7 +115,8 @@ do
             fi
             stow xfce ;;
         12)
-            clear if [-f ~/.conkyrc ]; then
+            clear
+            if [ -f ~/.conkyrc ]; then
                 mv ~/.conkyrc ~/.conkyrc.before
             fi
             stow conky ;;
