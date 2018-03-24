@@ -30,8 +30,8 @@
     changed = green
     untracked = cyan
 [user]
-	email = mikelaitornube2010@gmail.com
-	name = Mikel Pintado
+    email = mikelaitornube2010@gmail.com
+    name = Mikel Pintado
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
