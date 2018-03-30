@@ -46,6 +46,9 @@ alias tman='/usr/bin/man' # Man
 alias tvim='/usr/bin/vim' # Vim
 alias tcat='/usr/bin/cat' # Cat
 
+# Make sudo don't ignore aliases
+alias sudo='sudo '
+
 # Git Aliases
 alias gs='git status'
 alias gstsh='git stash'
