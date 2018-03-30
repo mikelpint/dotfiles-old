@@ -26,8 +26,8 @@ plugins=(
     archlinux
     tmux
     sudo
+    debian
     osx
-    brew
 )
 
 # Oh My Zsh
