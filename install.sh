@@ -24,7 +24,8 @@ options=(
     10 "Compton"
     11 "Xfce"
     12 "Conky"
-    13 "Exit"
+    13 "VSCode"
+    14 "Exit"
 )
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -61,7 +62,7 @@ do
             if [ -f ~/.config/nvim/plugged/youcompleteme/.installed ]; then
                 :
             else
-                python ~/.config/nvim/plugged/youcompleteme/install.py --clang-completer  > /dev/null
+                python ~/.config/nvim/plugged/youcompleteme/install.py > /dev/null
                 touch ~/.config/nvim/plugged/youcompleteme/.installed
             fi
             ;;
@@ -121,6 +122,12 @@ do
             fi
             stow conky ;;
         13)
+            clear
+            if [ -d ~/.config/Code]; then
+                mv ~/.config/Code ~/.config/Code-before
+            fi
+            stow vscode ;;
+        14)
             clear
             exit 0 ;;
     esac

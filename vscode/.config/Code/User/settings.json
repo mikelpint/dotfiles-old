@@ -1,0 +1,69 @@
+{
+    // New editor
+    "workbench.startupEditor": "none",
+
+    // Appearance
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+
+    // Fonts
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+
+    // Linux CLI
+    "terminal.integrated.shell.linux": "zsh",
+
+    // Windows CLI
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "chcp 65001"
+    ],
+
+    // Tabs
+    "editor.tabSize": 4,
+
+    // Whitespaces
+    "editor.renderWhitespace": "all",
+
+    // Cursor
+    "editor.cursorStyle": "underline",
+    "editor.multiCursorModifier": "alt",
+    
+    // Adjust lines
+    "editor.wordWrap": "off",
+    "window.zoomLevel": 0,
+    
+    // Git
+    "git.autofetch": true,
+
+    // Extension settings
+    
+        // Settings Sync
+        "sync.lastUpload": "",
+        "sync.lastDownload": "",
+        "sync.host": "",
+        "sync.pathPrefix": "",
+        "sync.removeExtensions": true,
+        "sync.syncExtensions": true,
+        "git.confirmSync": false,
+        "sync.gist": "",
+        "sync.autoDownload": false,
+        "sync.autoUpload": false,
+        "sync.forceDownload": false,
+        "sync.quietSync": true,
+        "sync.askGistName": false,
+
+        // GitLens 
+        "gitlens.keymap": "chorded",
+        "gitlens.advanced.messages": {
+            "suppressCommitHasNoPreviousCommitWarning": false,
+            "suppressCommitNotFoundWarning": false,
+            "suppressFileNotUnderSourceControlWarning": false,
+            "suppressGitVersionWarning": false,
+            "suppressLineUncommittedWarning": false,
+            "suppressNoRepositoryWarning": false,
+            "suppressResultsExplorerNotice": false,
+            "suppressShowKeyBindingsNotice": true
+    },
+}

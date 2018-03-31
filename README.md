@@ -39,9 +39,10 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 |   Polybar  |         stow polybar        |
 |    sxhkd   |          stow sxhkd         |
 |    Tmux    |          stow tmux          |
+|   VSCode   |         stow vscode         |
 |    Xfce    |          stow xfce          |
 |     X11    |           stow x11          |
-|     Zsh    |         stow compton        |
+|     Zsh    |           stow zsh          |
 
 # Special thanks
 
@@ -49,4 +50,4 @@ git clone https://github.com/mikelpint/dotfiles ~/.dotfiles
 <br>
 [@danirod](https://github.com/danirod): Some Vim settings.
 <br>
-[@skwp](https://github.com/): Most of ZSH aliases, keybindings and functions.
+[@skwp](https://github.com/skwp): Most of ZSH aliases, keybindings and functions.
