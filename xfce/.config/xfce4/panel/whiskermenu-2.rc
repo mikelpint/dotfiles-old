@@ -1,3 +1,4 @@
+favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
 button-title=Aplicaciones
 button-icon=app-launcher
 button-single-row=false
@@ -33,3 +34,4 @@ show-command-menueditor=true
 command-profile=mugshot
 show-command-profile=false
 search-actions=0
+

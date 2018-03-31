@@ -47,6 +47,7 @@ alias tvim='/usr/bin/vim' # Vim
 alias tcat='/usr/bin/cat' # Cat
 
 # Make sudo don't ignore aliases
+alias sudo='nocorrect sudo'
 alias sudo='sudo '
 
 # Git Aliases
