@@ -2,3 +2,6 @@
 xfce/.config/xfce4/terminal/accels.scm
 xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+xfce/.config/xfce4/desktop/icons.screen0-1350x723.rc
+xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml

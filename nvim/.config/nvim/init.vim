@@ -16,7 +16,6 @@ Plug 'vim-airline/vim-airline-themes' " Tabline (themes)
 Plug 'valloric/youcompleteme' "Code completion
 Plug 'chriskempson/base16-vim' " Color schemes
 Plug 'airblade/vim-gitgutter' " Git diff
-Plug 'benmills/vimux' "Interaction with Tmux
 Plug 'honza/vim-snippets' " Snippets
 Plug 'editorconfig/editorconfig-vim' " Configuration
 Plug 'junegunn/vim-easy-align' " Alignment
@@ -67,4 +66,4 @@ let NERDTreeWinSize=20
 let g:vimwiki_list = [{'path': '~/.vimwiki'}]
 
 " vim-airline
-let g:airline_theme='base16_solarized'
+let g:airline_theme='base16'
