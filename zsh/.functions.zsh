@@ -25,3 +25,16 @@ function songmetadata {
     echo "Album: $(playerctl metadata xesam:album)"
     echo "Song: $(playerctl metadata xesam:title)"
 }
+
+# GitHub token
+if [[ -f $HOME/.github_token ]]
+then
+  export GITHUB_TOKEN=$(cat $HOME/.github_token)
+fi
+
+# GitLab token
+if [[ -f $HOME/.gitlab_token ]]
+then
+  export GITLAB_API_PRIVATE_TOKEN=$(cat $HOME/.gitlab_token)
+fi
+export GITLAB_API_ENDPOINT="https://gitlab.com/api/v3"
