@@ -1,6 +1,9 @@
-# Set editor to Vim
+# Set editor to Neovim
 export VISUAL=nvim
 export EDITOR=$VISUAL
+
+# Add downloaded binaries to PATH
+export PATH=$PATH:~/.binaries
 
 # Add Gem packages to $PATH
 export PATH=$PATH:~/.gem/ruby/2.5.0/bin
