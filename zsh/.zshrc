@@ -2,6 +2,9 @@
 export VISUAL=nvim
 export EDITOR=$VISUAL
 
+# Add sbin to PATH
+export PATH=$PATH:/sbin
+
 # Add downloaded binaries to PATH
 export PATH=$PATH:~/.binaries
 

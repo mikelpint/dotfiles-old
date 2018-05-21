@@ -53,8 +53,8 @@ alias tcat='/usr/bin/cat' # Cat
 alias tls='/usr/bin/ls' # LS
 
 # Make sudo don't ignore aliases
-alias sudo='nocorrect sudo'
 alias sudo='sudo '
+alias sudo='nocorrect sudo'
 
 # Git Aliases
 alias gs='git status'
