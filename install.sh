@@ -1,13 +1,22 @@
 #!/bin/sh
 
-if [ -f /usr/bin/dialog ]; then
+if [ -f /usr/bin/dialog ]
+then
     :
-elif [ -f /usr/local/bin/dialog ]; then
+elif [ -f /usr/local/bin/dialog ]
+then
     :
 else
-    echo "Please install dialog before continuing"
+    echo "Please install dialog before continuing."
     exit 1
 fi
+
+if [ ! -f /usr/bin/stow ]
+then
+    echo "Please install GNU Stow before continuing."
+    exit 2
+fi
+
 
 cmd=(dialog --backtitle "mikelpint's dotfiles: Installation script" --menu "Select an option:" 20 40 10)
 
