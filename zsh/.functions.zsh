@@ -38,3 +38,6 @@ then
   export GITLAB_API_PRIVATE_TOKEN=$(cat $HOME/.gitlab_token)
 fi
 export GITLAB_API_ENDPOINT="https://gitlab.com/api/v3"
+
+# ssh-agent at startup
+eval `keychain -q --agents ssh --eval id_rsa`
