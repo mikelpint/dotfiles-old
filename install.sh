@@ -77,11 +77,24 @@ do
             ;;
         5)
             clear
+            if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
+                sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+            fi
+            if [ ! -f ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting.plugin.zsh ]; then
+                git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+            fi
+            if [ ! -f ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions.plugin.zsh ]; then
+                git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+            fi
+            if [ ! -f $ZSH_CUSTOM/plugins/auto-ls.zsh ]; then
+                curl -L https://git.io/auto-ls > $ZSH_CUSTOM/plugins/auto-ls.zsh
+            fi
             if [ -f ~/.zshrc ]; then
                 mv ~/.zshrc ~/.zshrc.before
                 mv ~/.keybindings.zsh ~/.keybindings.zsh.before
                 mv ~/.aliases.zsh ~/.aliases.zsh.before
                 mv ~/.functions.zsh ~/.functions.zsh.before
+                mv ~/.moreplugins.zsh ~/.moreplugins.zsh.before
             fi
             stow zsh ;;
         6)

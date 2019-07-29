@@ -18,6 +18,10 @@ export LANG=es_ES.UTF-8
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOCONNECT=true
 
+#auto-ls plugin's configuration
+AUTO_LS_COMMANDS=(ls)
+AUTO_LS_NEWLINE=false
+
 # Theme
 ZSH_THEME="ys"
 
@@ -34,13 +38,16 @@ plugins=(
     sudo
     debian
     osx
+    zsh-syntax-highlighting
+    zsh-autosuggestions
 )
 
 # Oh My Zsh
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# Aliases, keybindings and fuctions
+# Aliases, keybindings, fuctions and extra plugins
 source ~/.functions.zsh
 source ~/.aliases.zsh
 source ~/.keybindings.zsh
+source ~/.moreplugins.zsh
