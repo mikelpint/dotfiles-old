@@ -66,7 +66,7 @@ do
             if [ -f ~/.config/nvim/init.vim ]; then
                 mv ~/.config/nvim ~/.config/nvim-before
             fi
-            stow nvim
+            stow nvim/.config/nvim
             nvim +PlugInstall +qall > /dev/null
             if [ -f ~/.config/nvim/plugged/youcompleteme/.installed ]; then
                 :
@@ -81,13 +81,16 @@ do
                 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
             fi
             if [ ! -f ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting.plugin.zsh ]; then
-                git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+                git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
             fi
             if [ ! -f ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions.plugin.zsh ]; then
-                git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+                git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
             fi
-            if [ ! -f $ZSH_CUSTOM/plugins/auto-ls.zsh ]; then
-                curl -L https://git.io/auto-ls > $ZSH_CUSTOM/plugins/auto-ls.zsh
+            if [ ! -f ~/.oh-my-zsh/custom/plugins/auto-ls.zsh ]; then
+                curl -L https://git.io/auto-ls > ~/.oh-my-zsh/custom/plugins/auto-ls.zsh
+            fi
+            if [ ! -f ~/.oh-my-zsh/custom/plugins/calc/calc.plugin.zsh ]; then
+                git clone https://github.com/arzzen/calc.plugin.zsh.git ~/.oh-my-zsh/custom/plugins/calc
             fi
             if [ -f ~/.zshrc ]; then
                 mv ~/.zshrc ~/.zshrc.before
