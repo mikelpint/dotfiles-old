@@ -40,6 +40,8 @@ plugins=(
     osx
     zsh-syntax-highlighting
     zsh-autosuggestions
+    vscode
+    ubuntu
 )
 
 # Oh My Zsh
