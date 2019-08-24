@@ -15,8 +15,10 @@ export PATH=$PATH:~/.gem/ruby/2.5.0/bin
 export LANG=es_ES.UTF-8
 
 # Tmux plugin's configuration
-export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOCONNECT=true
+if [ ! '$(lsb_release -i) | grep Raspbian' ]; then
+    export ZSH_TMUX_AUTOSTART=true
+    export ZSH_TMUX_AUTOCONNECT=true
+fi
 
 #auto-ls plugin's configuration
 AUTO_LS_COMMANDS=(ls)
